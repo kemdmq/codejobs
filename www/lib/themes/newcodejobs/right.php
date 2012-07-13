@@ -23,7 +23,7 @@
                 </li>
 
                 <li>
-                    <img title="Colombia-Perú-Ecuador" alt="Colombia-Perú-Ecuador" src="<?php print $this->themePath; ?>/images/flags/12pm.png">
+                    <img title="Colombia-Perú-Ecuador-Panamá" alt="Colombia-Perú-Ecuador-Panamá" src="<?php print $this->themePath; ?>/images/flags/12pm.png">
                     <span class="schedule2">12:00 pm</span>
                 </li>
 
@@ -33,7 +33,7 @@
                 </li>
 
                 <li>
-                    <img title="Chile-Argentina" alt="Chile-Argentina" src="<?php print $this->themePath; ?>/images/flags/02pm.png">
+                    <img title="Chile-Argentina-Paraguay" alt="Chile-Argentina-Paraguay" src="<?php print $this->themePath; ?>/images/flags/02pm.png">
                     <span class="schedule3">02:00 pm</span>
                 </li>
 
