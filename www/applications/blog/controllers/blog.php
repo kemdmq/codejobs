@@ -71,6 +71,7 @@ class Blog_Controller extends ZP_Controller {
 	private function getPosts($year = NULL, $month = NULL, $day = NULL) {
 		$this->CSS("posts", $this->application);
 		$this->CSS("pagination");
+		$this->helper("time");
 		
 		if($day) {
 			$limit = $this->limit("day");		
