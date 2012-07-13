@@ -31,9 +31,9 @@
 				<nav>
 					<ul>
 						<li><a href="<?php echo path(); ?>"><?php echo __("Home"); ?></a></li>
-						<?php if(get("ready")) { ?><li><a href="<?php echo path("codes"); ?>"><?php echo __(_("Codes")); ?></a></li><?php } ?>
-						<?php if(get("ready")) { ?><li><a href="<?php echo path("jobs"); ?>"><?php echo __(_("Jobs")); ?></a></li><?php } ?>
-						<?php if(get("ready")) { ?><li><a href="<?php echo path("forums"); ?>"><?php echo __(_("Forums")); ?></a></li><?php } ?>
+						<li><a href="<?php echo path("codes"); ?>"><?php echo __(_("Codes")); ?></a></li>
+						<li><a href="<?php echo path("jobs"); ?>"><?php echo __(_("Jobs")); ?></a></li>
+						<li><a href="<?php echo path("forums"); ?>"><?php echo __(_("Forums")); ?></a></li>
 						<li><a href="<?php echo path("videos"); ?>"><?php echo __(_("Videos")); ?></a></li>
 						<li><a href="<?php echo path("bookmarks"); ?>"><?php echo __(_("Bookmarks")); ?></a></li>
 					</ul>
