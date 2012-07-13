@@ -128,11 +128,15 @@ a:hover {
 	float: left;
 	padding: 10px;
 	color: #00A0DE;
-	font-size: 0.8em;
+	font-size: 0.75em;
 }
 
 #sidebar ul {
 	list-style: url(../images/arrow-blue.gif);
+}
+
+#sidebar ul li ul li {
+	margin-left: -25px;
 }
 
 #sidebar a {
