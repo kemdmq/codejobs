@@ -15,6 +15,7 @@
 		print $this->themeCSS("cpanel"); 
 		
 		print $this->js("jquery", NULL, NULL, TRUE); 
+		$this->js("www/lib/scripts/js/main.js");
 	?>
 	
 	<script type="text/javascript">
