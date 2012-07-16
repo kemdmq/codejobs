@@ -48,6 +48,19 @@ class Videos_Controller extends ZP_Controller {
 		}
 	}
 	
+	public function video($id){
+		$this->Videos_Model = $this->model("Videos_Model");
+		$video = $this->Videos_Model->getByID($id);
+		if($video){
+			$vars["video"] = $video[0];
+			$vars["view"]  = $this->view("video", TRUE);
+			
+			$this->render("content", $vars);
+		} else{
+			redirect();
+		}
+	}
+	
 	private function limit() { 			
 		$start = (segment(0, isLang()) === "videos" and segment(1, isLang()) > 0) ? (segment(2) * _maxLimitVideos) - _maxLimitVideos : 0;
 		

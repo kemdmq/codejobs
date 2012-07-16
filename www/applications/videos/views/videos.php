@@ -4,11 +4,12 @@
 	<?php
 		foreach($videos as $video) {
 		?>
+		<?php $URL = path("videos/video/". $video["ID_Video"]);?>
 			<p class="video-title">
 				<h2>
-					<a href="http://www.youtube.com/watch?v=<?php echo $video["ID_YouTube"]; ?>" target="_blank" title="<?php echo $video["Title"]; ?>">
+					<a href="<?php echo $URL; ?>" title="<?php echo $video["Title"]; ?>">
 						<?php echo $video["Title"]; ?>
-					</a> 
+					</a>
 				</h2>
 
 				<iframe width="800" height="460" src="http://www.youtube.com/embed/<?php echo $video["ID_YouTube"]; ?>" frameborder="0" allowfullscreen></iframe>

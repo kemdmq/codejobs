@@ -12,7 +12,7 @@ class Videos_Model extends ZP_Model {
 		$this->Db = $this->db();
 		
 		$this->table  = "videos";
-		$this->fields = "ID_YouTube, Title";
+		$this->fields = "ID_Video, ID_YouTube, Title";
 
 		$this->language    = whichLanguage(); 
 		$this->application = whichApplication();
