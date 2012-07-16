@@ -19,6 +19,10 @@ class Blog_Model extends ZP_Model {
 
 		$this->Data->table($this->table);
 	}
+
+	public function getRss() {	
+		return $this->Db->findBySQL("Language = '$this->language' AND Situation = 'Active'", $this->table, $this->fields, NULL, "ID_Post DESC");
+	}
 	
 	public function cpanel($action, $limit = NULL, $order = "Language DESC", $search = NULL, $field = NULL, $trash = FALSE) {
 		if($action === "edit" or $action === "save") {

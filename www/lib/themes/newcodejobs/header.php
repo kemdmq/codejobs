@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title><?php echo $this->getTitle(); ?></title>
-	
+	<link href="<?php echo path("blog/rss"); ?>" rel="alternate" type="application/rss+xml" title="RSS Codejobs" />
 	<link rel="stylesheet" href="<?php echo path("www/lib/css/default.css", TRUE); ?>" type="text/css">
 	<link rel="stylesheet" href="<?php echo $this->themePath; ?>/css/style.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo $this->themePath; ?>/css/mediaqueries.css" type="text/css">

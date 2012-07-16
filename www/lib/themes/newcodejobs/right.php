@@ -4,7 +4,7 @@
             
             <a href="http://www.youtube.com/codejobs" target="_blank"><img class="no-border" title="<?php print __(_("Subscribe to our Youtube channel")); ?>" alt="Siguenos en Youtube" src="<?php print $this->themePath; ?>/images/social/youtube.png"></a>
             
-            <a href="#" target="_blank"><img class="no-border" title="<?php print __(_("Follow us with RSS")); ?>" alt="<?php print __(_("Follow us with RSS")); ?>" src="<?php print $this->themePath; ?>/images/social/rss.png"></a>
+            <a href="<?php echo path("blog/rss"); ?>" target="_blank"><img class="no-border" title="<?php print __(_("Follow us with RSS")); ?>" alt="<?php print __(_("Follow us with RSS")); ?>" src="<?php print $this->themePath; ?>/images/social/rss.png"></a>
         </section>
 
         <div class="line"></div>

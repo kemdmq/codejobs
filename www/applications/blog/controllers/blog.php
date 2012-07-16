@@ -38,6 +38,20 @@ class Blog_Controller extends ZP_Controller {
 			$this->last();
 		}
 	}
+
+	public function rss()
+	{
+		$this->helper("time");
+		$data = $this->Blog_Model->getRss();
+		
+		if($data) {
+			$vars["posts"]= $data;	
+			$this->view("rss",$vars,$this->application);
+		}else {
+			redirect();
+		}
+
+	}
 	
 	public function archive() {		
 		$this->CSS("archive", TRUE);
