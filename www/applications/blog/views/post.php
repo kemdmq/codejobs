@@ -34,6 +34,7 @@ if(is_array($post)) {
 			</a>
 		</div>
 	</div>
-	<br />
+	<br /></br />
+	<div class="fb-comments" data-href="<?php echo $URL; ?>" data-num-posts="2" data-width="750"></div>
 	<?php
 }
