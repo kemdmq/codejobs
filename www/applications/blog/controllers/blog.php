@@ -39,15 +39,16 @@ class Blog_Controller extends ZP_Controller {
 		}
 	}
 
-	public function rss()
-	{
+	public function rss() {
 		$this->helper("time");
-		$data = $this->Blog_Model->getRss();
+
+		$data = $this->Blog_Model->getRSS();
 		
 		if($data) {
 			$vars["posts"]= $data;	
-			$this->view("rss",$vars,$this->application);
-		}else {
+
+			$this->view("rss", $vars, $this->application);
+		} else {
 			redirect();
 		}
 

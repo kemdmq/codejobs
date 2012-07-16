@@ -20,7 +20,7 @@ class Blog_Model extends ZP_Model {
 		$this->Data->table($this->table);
 	}
 
-	public function getRss() {	
+	public function getRSS() {	
 		return $this->Db->findBySQL("Language = '$this->language' AND Situation = 'Active'", $this->table, $this->fields, NULL, "ID_Post DESC");
 	}
 	
