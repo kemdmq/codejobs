@@ -136,8 +136,8 @@ INSERT INTO `muu_blog` (`ID_Post`, `ID_User`, `ID_URL`, `Title`, `Slug`, `Conten
 (7, 1, 1, 'CodeIgniter', 'codeigniter', '<p>aasdsdasdsd</p>', '', 'codejobs', 1337740342, 'Wednesday, 23 de Mayo de 2012', '2012', '05', '23', 26, '', '', 0, 1, 'Spanish', '', 'Active'),
 (8, 1, 1, 'CSS3', 'css3', '<p>ASDSADASD</p>', '', 'codejobs', 1337740383, 'Wednesday, 23 de Mayo de 2012', '2012', '05', '23', 26, '', '', 0, 1, 'Spanish', '', 'Active'),
 (9, 1, 1, 'Databases', 'databases', '<p>asdsadasdasdsadsadsad</p>\r\n<p>sadsadsadsadsadasd</p>\r\n<p><!-- pagebreak -->sadsadsadsad</p>\r\n<p>sadasdasdasdsa</p>', '', 'codejobs', 1337740432, 'Wednesday, 23 de Mayo de 2012', '2012', '05', '23', 28, '', '', 0, 1, 'Spanish', '', 'Active'),
-(10, 1, 1, 'eMarketing', 'emarketing', '<p>asdasdasdasdsad</p>\r\n<p><img src="https://si0.twimg.com/profile_images/2213925750/Candi_Mini.png" alt="" width="300" height="234" /></p>', '', 'codejobs', 1337740491, 'Wednesday, 23 de Mayo de 2012', '2012', '05', '23', 45, '', '', 3, 1, 'Spanish', '', 'Active'),
-(11, 1, 1, 'Git & Github', 'git-github', '<p>sdasdsad</p>', 'git, github, php', 'codejobs', 1337741954, 'Wednesday, 23 de Mayo de 2012', '2012', '05', '23', 141, '', '', 20, 1, 'Spanish', '', 'Active');
+(10, 1, 1, 'eMarketing', 'emarketing', '<p>asdasdasdasdsad</p>\r\n<p><img src="https://si0.twimg.com/profile_images/2213925750/Candi_Mini.png" alt="" width="300" height="234" /></p>', '', 'codejobs', 1337740491, 'Wednesday, 23 de Mayo de 2012', '2012', '05', '23', 45, '', '', 0, 1, 'Spanish', '', 'Active'),
+(11, 1, 1, 'Git & Github', 'git-github', '<p>sdasdsad</p>', 'git, github, php', 'codejobs', 1337741954, 'Wednesday, 23 de Mayo de 2012', '2012', '05', '23', 141, '', '', 0, 1, 'Spanish', '', 'Active');
 
 -- --------------------------------------------------------
 
@@ -221,37 +221,8 @@ CREATE TABLE IF NOT EXISTS `muu_comments` (
   `Situation` varchar(15) NOT NULL DEFAULT 'Active',
   PRIMARY KEY (`ID_Comment`),
   KEY `ID_User` (`ID_User`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=25 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Dumping data for table `muu_comments`
---
-
-INSERT INTO `muu_comments` (`ID_Comment`, `ID_User`, `Comment`, `Start_Date`, `Text_Date`, `Username`, `Avatar`, `Situation`) VALUES
-(1, 1, 'Hola soy Carlos', 1337907194, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(2, 1, 'ASDASDASD', 1337647712, 'Wednesday, 23 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(3, 1, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 1337910841, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(4, 1, 'sdfdsfdsf', 1337910951, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(5, 1, 'sdfdsfdsf', 1337910955, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(6, 1, 'sdfdsfdsf', 1337911049, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(7, 1, 'sdfdsfdsf', 1337911053, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(8, 1, 'asdasd', 1337911099, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(9, 1, 'asdasd', 1337911103, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(10, 1, 'asdasdasd', 1337911170, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(11, 1, 'sdfdsfsdf', 1337911193, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(12, 1, 'sdfsdfdf', 1337911196, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(13, 1, 'asdasd', 1337911269, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(14, 1, 'asdasd', 1337911288, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(15, 1, 'asdasd', 1337911302, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(16, 1, 'asdasd', 1337911335, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(17, 1, 'asdasd', 1337911433, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(18, 1, 'asdasd', 1337911452, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(19, 1, 'asdasd', 1337911472, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(20, 1, 'ADAD', 1337911931, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(21, 1, 'sdfsdfsf', 1337913946, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(22, 1, 'asdadad', 1337914091, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(23, 1, 'scriptalert("Hola");/script', 1337914207, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active'),
-(24, 1, 'iframe', 1337914568, 'Viernes, 25 de Mayo de 2012', 'codejobs', 'default.png', 'Active');
 
 -- --------------------------------------------------------
 
