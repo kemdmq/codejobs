@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 17, 2012 at 02:47 AM
+-- Generation Time: Jul 17, 2012 at 02:51 AM
 -- Server version: 5.1.44
 -- PHP Version: 5.3.1
 
@@ -1007,31 +1007,6 @@ INSERT INTO `muu_pages` (`ID_Page`, `ID_User`, `ID_Translation`, `Title`, `Slug`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `muu_points`
---
-
-CREATE TABLE IF NOT EXISTS `muu_points` (
-  `ID_Point` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `ID_User` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `ID_Application` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `ID_Record` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `Action` varchar(30) NOT NULL DEFAULT 'Like',
-  `Points` int(11) NOT NULL DEFAULT '0',
-  `Start_Date` int(11) NOT NULL DEFAULT '0',
-  `Situation` varchar(15) NOT NULL DEFAULT 'Active',
-  PRIMARY KEY (`ID_Point`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `muu_points`
---
-
-INSERT INTO `muu_points` (`ID_Point`, `ID_User`, `ID_Application`, `ID_Record`, `Action`, `Points`, `Start_Date`, `Situation`) VALUES
-(1, 1, 10, 1, 'Like', 1, 1338348567, 'Active');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `muu_polls`
 --
 
@@ -1482,8 +1457,8 @@ CREATE TABLE IF NOT EXISTS `muu_users` (
   `Email` varchar(45) NOT NULL,
   `Website` varchar(100) NOT NULL,
   `Avatar` varchar(200) NOT NULL DEFAULT 'default.png',
-  `Points` mediumint(8) NOT NULL DEFAULT '50',
-  `Recommendation` mediumint(8) NOT NULL DEFAULT '0',
+  `Credits` mediumint(8) NOT NULL DEFAULT '0',
+  `Recommendation` mediumint(8) NOT NULL DEFAULT '50',
   `Sign` text NOT NULL,
   `Messages` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `Recieve_Messages` tinyint(1) NOT NULL DEFAULT '1',
@@ -1524,7 +1499,7 @@ CREATE TABLE IF NOT EXISTS `muu_users` (
 -- Dumping data for table `muu_users`
 --
 
-INSERT INTO `muu_users` (`ID_User`, `ID_Privilege`, `Username`, `Pwd`, `Email`, `Website`, `Avatar`, `Points`, `Recommendation`, `Sign`, `Messages`, `Recieve_Messages`, `Topics`, `Replies`, `Comments`, `Codes`, `Tutorials`, `Jobs`, `Subscribed`, `Start_Date`, `Code`, `CURP`, `RFC`, `Name`, `Age`, `Title`, `Address`, `Zip`, `Phone`, `Mobile`, `Gender`, `Relationship`, `Birthday`, `Country`, `District`, `City`, `Technologies`, `Twitter`, `Facebook`, `Linkedin`, `Viadeo`, `Situation`) VALUES
+INSERT INTO `muu_users` (`ID_User`, `ID_Privilege`, `Username`, `Pwd`, `Email`, `Website`, `Avatar`, `Credits`, `Recommendation`, `Sign`, `Messages`, `Recieve_Messages`, `Topics`, `Replies`, `Comments`, `Codes`, `Tutorials`, `Jobs`, `Subscribed`, `Start_Date`, `Code`, `CURP`, `RFC`, `Name`, `Age`, `Title`, `Address`, `Zip`, `Phone`, `Mobile`, `Gender`, `Relationship`, `Birthday`, `Country`, `District`, `City`, `Technologies`, `Twitter`, `Facebook`, `Linkedin`, `Viadeo`, `Situation`) VALUES
 (1, 1, 'admin', 'b9223847e1566884893656e84798ff39cea2b8c4', 'carlos@milkzoft.com', '', 'default.png', 50, 0, '', 0, 1, 0, 0, 0, 0, 0, 0, 1, 1337647712, 'BC958D3C97', '', '', 'Carlos Santana Roldán', 18, '', '', '', '', '0', 'M', 'Single', '', '', '', '', '', '', '', '', '', 'Active');
 
 -- --------------------------------------------------------
