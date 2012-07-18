@@ -6,13 +6,13 @@ if(!defined("_access")) {
 	die("Error: You don't have permission to access here...");
 }
 
-class Bookmarks_Model extends ZP_Model {
+class Codes_Model extends ZP_Model {
 	
 	public function __construct() {
 		$this->Db = $this->db();
 		
 		$this->table  = "codes";
-		$this->fields = "ID_Code, Title, Slug, Code, Author, Tags, Start_Date, Text_Date, Views, Likes, Dislikes, Language, Situation";
+		$this->fields = "ID_Code, Title, Slug, Code, Syntax, Tags, Author, Start_Date, Text_Date, Views, Likes, Dislikes, Language, Situation";
 
 		$this->Data = $this->core("Data");
 		$this->Data->table("codes");
@@ -93,7 +93,7 @@ class Bookmarks_Model extends ZP_Model {
 	}
 
 	public function getByTag($tag, $limit) {
-		return $this->Db->findBySQL("Title LIKE '%$tag%' OR Description LIKE '%$tag%' OR Tags LIKE '%$tag%' AND Situation = 'Active'", $this->table, $this->fields, NULL, "ID_Bookmark DESC", $limit);
+		return $this->Db->findBySQL("Title LIKE '%$tag%' OR Code LIKE '%$tag%' OR Tags LIKE '%$tag%' AND Situation = 'Active'", $this->table, $this->fields, NULL, "ID_Code DESC", $limit);
 	}
 	
 	public function getByID($ID) {
@@ -101,13 +101,22 @@ class Bookmarks_Model extends ZP_Model {
 	}
 	
 	public function getAll($limit) {		
-		$data = $this->Db->findAll($this->table, $this->fields, NULL, "ID_Bookmark DESC", $limit);
+		$data = $this->Db->findAll($this->table, $this->fields, NULL, "ID_Code DESC", $limit);
 		
 		return $data;
 	}
 
-	public function updateViews($bookmarkID) {
-		return $this->Db->updateBySQL($this->table, "Views = (Views) + 1 WHERE ID_Bookmark = '$bookmarkID'");
+	public function updateViews($codeID) {
+		return $this->Db->updateBySQL($this->table, "Views = (Views) + 1 WHERE ID_Code = '$codeID'");
 	}
 
+        public function setReport($ID) {
+            if ($this->Db->find($ID, "codes")) {
+                $this->Db->updateBySQL("codes", "Reported = (Reported) + 1 WHERE ID_Code = '$ID'");
+
+                showAlert(__(_("Thanks for reporting this code")), path("codes/go/$ID"));
+            } else {
+                redirect();
+            }
+        }
 }

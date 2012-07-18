@@ -1,0 +1,26 @@
+.codes h2 a {
+	color: #292929;
+	text-decoration: none;
+}
+
+.codes h2 a:hover {
+	color: #045c98;
+}
+
+.codes a {
+	color: #CC2A2A;
+	text-decoration: none;
+}
+
+.codes a:hover {
+	color: #045c98;
+}
+
+.CodeMirror {
+    border: 1px solid #eee;
+}
+.CodeMirror-scroll {
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: auto !important;
+}

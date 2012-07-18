@@ -238,10 +238,10 @@ class ZP_Templates extends ZP_Load {
 			$js = '<script type="text/javascript" src="'. path($js, TRUE) .'"></script>';
 		} elseif(file_exists(path($js, "zan"))) {
 			$js = '<script type="text/javascript" src="'. path($js, "zan") .'"></script>';
-		} elseif(file_exists("www/$application/views/js/$js")) {
-			$js = '<script type="text/javascript" src="'. path("www/$application/views/js/$js") .'"></script>';
-		} elseif(file_exists("www/$application/views/js/$js.js")) {
-			$js = '<script type="text/javascript" src="'. path("www/$application/views/js/$js.js") .'"></script>';
+		} elseif(file_exists("www/applications/$application/views/js/$js")) {
+			$js = '<script type="text/javascript" src="'. get("webURL") .'/www/applications/' . $application . '/views/js/' . $js . '"></script>';
+		} elseif(file_exists("www/applications/$application/views/js/$js.js")) {
+			$js = '<script type="text/javascript" src="'. get("webURL") .'/www/applications/' . $application . '/views/js/' . $js . '.js"></script>';
 		} else {
 			return FALSE;
 		}

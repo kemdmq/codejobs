@@ -477,9 +477,9 @@ class Users_Model extends ZP_Model {
 	public function setLike($ID, $table, $application) {
 		if($this->Db->find($ID, $table)) {
 			if($this->Db->findBySQL("ID_User = '". SESSION("ZanUserID") ."' AND ID_Application = '$application' AND ID_Record = '$ID'", "likes")) {
-				showAlert(__(_("Already You like this")), path("bookmarks/go/$ID"));
+				showAlert(__(_("Already You like this")), path("$table/go/$ID"));
 			} elseif($this->Db->findBySQL("ID_User = '". SESSION("ZanUserID") ."' AND ID_Application = '$application' AND ID_Record = '$ID'", "dislikes")) {
-				showAlert(__(_("Already You dislike this")), path("bookmarks/go/$ID"));
+				showAlert(__(_("Already You dislike this")), path("$table/go/$ID"));
 			}
 
 			$this->helper("time");
@@ -490,7 +490,7 @@ class Users_Model extends ZP_Model {
 
 			$this->Db->updateBySQL($table, "Likes = (Likes) + 1 WHERE $primaryKey = '$ID'");
 			
-			showAlert(__(_("Thanks for your like")), path("bookmarks/go/$ID"));
+			showAlert(__(_("Thanks for your like")), path("$table/go/$ID"));
 		} 
 
 		showAlert(__(_("The record doesn't exists")), path());
@@ -499,9 +499,9 @@ class Users_Model extends ZP_Model {
 	public function setDislike($ID, $table, $application) {
 		if($this->Db->find($ID, $table)) {
 			if($this->Db->findBySQL("ID_User = '". SESSION("ZanUserID") ."' AND ID_Application = '$application' AND ID_Record = '$ID'", "dislikes")) {
-				showAlert(__(_("Already You dislike this")), path("bookmarks/go/$ID"));
+				showAlert(__(_("Already You dislike this")), path("$table/go/$ID"));
 			} elseif($this->Db->findBySQL("ID_User = '". SESSION("ZanUserID") ."' AND ID_Application = '$application' AND ID_Record = '$ID'", "likes")) {
-				showAlert(__(_("Already You like this")), path("bookmarks/go/$ID"));
+				showAlert(__(_("Already You like this")), path("$table/go/$ID"));
 			}
 
 			$this->helper("time");
@@ -512,7 +512,7 @@ class Users_Model extends ZP_Model {
 
 			$this->Db->updateBySQL($table, "Dislikes = (Dislikes) + 1 WHERE $primaryKey = '$ID'");
 
-			showAlert(__("Thanks for your dislike"), path("bookmarks/go/$ID"));
+			showAlert(__("Thanks for your dislike"), path("$table/go/$ID"));
 		} 
 
 		showAlert(__("The record doesn't exists"), path());

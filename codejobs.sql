@@ -88,7 +88,8 @@ INSERT INTO `muu_applications` (`ID_Application`, `Title`, `Slug`, `CPanel`, `Ad
 (13, 'Support', 'support', 1, 1, 0, 0, 'Inactive'),
 (14, 'Users', 'users', 1, 1, 0, 0, 'Active'),
 (15, 'Videos', 'videos', 1, 1, 1, 0, 'Active'),
-(16, 'Works', 'works', 1, 1, 1, 0, 'Active');
+(16, 'Works', 'works', 1, 1, 1, 0, 'Active'),
+(17, 'Codes', 'codes', 1, 1, 1, 0, 'Active');
 
 -- --------------------------------------------------------
 
@@ -187,6 +188,7 @@ CREATE TABLE IF NOT EXISTS `muu_codes` (
   `Title` varchar(150) NOT NULL,
   `Slug` varchar(150) NOT NULL,
   `Code` text NOT NULL,
+  `Syntax` varchar(50) NOT NULL DEFAULT 'application/x-httpd-php',
   `Tags` varchar(100) NOT NULL,
   `Author` varchar(100) NOT NULL,
   `Start_Date` int(11) unsigned NOT NULL DEFAULT '0',
@@ -194,6 +196,7 @@ CREATE TABLE IF NOT EXISTS `muu_codes` (
   `Views` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `Likes` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `Dislikes` mediumint(8) NOT NULL DEFAULT '0',
+  `Reported` tinyint(1) NOT NULL DEFAULT '0',
   `Language` varchar(20) NOT NULL DEFAULT 'English',
   `Situation` varchar(10) NOT NULL DEFAULT 'Active',
   PRIMARY KEY (`ID_Code`)
@@ -202,6 +205,10 @@ CREATE TABLE IF NOT EXISTS `muu_codes` (
 --
 -- Dumping data for table `muu_codes`
 --
+
+INSERT INTO `muu_codes` (`ID_Code`, `ID_User`, `Title`, `Slug`, `Code`, `Syntax`, `Tags`, `Author`, `Start_Date`, `Text_Date`, `Views`, `Likes`, `Dislikes`, `Reported`, `Language`, `Situation`) VALUES
+(1, 1, 'Mensajes de alerta en Javascript', 'mensajes-de-alerta-en-javascript', '// Primer script :D\n\nalert(\"Hola Mundo!\");', 'text/javascript', 'javascript, mensajes', 'codejobs', 1342473232, 'Monday, 16 de Julio de 2012', 12, 2, 0, 1, 'Spanish', 'Active'),
+(2, 1, 'Mostrar información en PHP', 'mostrar-informacion-en-php', '// La siguiente línea despliega información de PHP\n\nphpinfo();', 'text/x-php', 'php, info', 'codejobs', 1342473272, 'Monday, 16 de Julio de 2012', 3, 0, 0, 0, 'Spanish', 'Active');
 
 
 -- --------------------------------------------------------

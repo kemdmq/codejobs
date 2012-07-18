@@ -44,12 +44,13 @@ class Codes_Controller extends ZP_Controller {
 	}
 
 	public function report($ID) {
-		$this->Codes_Model->setReport($ID, "codes", 17);
+		$this->Codes_Model->setReport($ID);
 	}	
 
 	public function tag($tag) {
 		$this->title(__("Codes"));
-		$this->CSS("codes", $this->application);
+		$this->setResources();
+                $this->CSS("codes", $this->application);
 		$this->CSS("pagination");
 		
 		$limit = $this->limit($tag);
@@ -70,7 +71,8 @@ class Codes_Controller extends ZP_Controller {
 	}
 
 	public function go($codeID = 0) {
-		$this->CSS("codes", $this->application);
+                $this->setResources();	
+                $this->CSS("codes", $this->application);
 		$this->CSS("pagination");
 
 		$data = $this->Cache->data("code-$codeID", "codes", $this->Codes_Model, "getByID", array($codeID));
@@ -83,21 +85,9 @@ class Codes_Controller extends ZP_Controller {
 			$this->Codes_Model->updateViews($codeID);
 
 			$vars["code"] 	= $data[0];
-			$vars["view"]   = $this->view("codes", TRUE);
+			$vars["view"]   = $this->view("code", TRUE);
 			
 			$this->render("content", $vars);
-		} else {
-			redirect();
-		}
-	}
-	
-	public function visit($codeID = 0) {
-		$data = $this->Cache->data("bookmark-$codeID", "codes", $this->Codes_Model, "getByID", array($codeID));
-
-		if($data) {
-			$this->Codes_Model->updateViews($codeID);
-
-			redirect($data[0]["URL"]);
 		} else {
 			redirect();
 		}
@@ -105,6 +95,7 @@ class Codes_Controller extends ZP_Controller {
 
 	public function getCodes() {
 		$this->title(__(_("Codes")));
+                $this->setResources();
 		$this->CSS("codes", $this->application);
 		$this->CSS("pagination");
 		
@@ -142,4 +133,13 @@ class Codes_Controller extends ZP_Controller {
 
 		return $limit;
 	}
+        
+        private function setResources() {
+            $this->helper("codes", $this->application);
+            $this->CSS("CodeMirror/codemirror", $this->application);
+            $this->CSS("CodeMirror/theme/monokai", $this->application);
+            $this->js("CodeMirror/codemirror.js", $this->application);
+            $this->js("jquery.dataset.js", $this->application);
+        }
+        
 }
