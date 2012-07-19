@@ -10,7 +10,7 @@
         <text>Idioma%2C%20Registrar%2C%20Conectar</text>
       </controlProperties>
     </control>
-    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="64" y="47" w="-1" h="-1" measuredW="250" measuredH="90" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="64" y="47" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/logo.png</src>
         <text/>
@@ -126,25 +126,25 @@
         <text>ZanPHP</text>
       </controlProperties>
     </control>
-    <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="1059" y="165" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="25" locked="false" isInGroup="-1">
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="1059" y="165" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/twitter.png</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="1097" y="165" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="26" locked="false" isInGroup="-1">
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="1097" y="165" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="26" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/facebook.png</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="1136" y="165" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="27" locked="false" isInGroup="-1">
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="1136" y="165" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="27" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/youtube.png</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="31" controlTypeID="com.balsamiq.mockups::Image" x="1176" y="165" w="32" h="32" measuredW="32" measuredH="32" zOrder="28" locked="false" isInGroup="-1">
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Image" x="1176" y="165" w="32" h="32" measuredW="77" measuredH="79" zOrder="28" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/rss.png</src>
         <text/>
