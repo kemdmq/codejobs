@@ -9,17 +9,17 @@ if(!defined("_access")) {
 class Videos_Controller extends ZP_Controller {
 	
 	public function __construct() {
-		$this->Templates   = $this->core("Templates");
-
-		$this->Videos_Model = $this->model("Videos_Model");
+		$this->Templates = $this->core("Templates");
 		
 		$this->config("videos");
 
-		$this->helpers();
 		$this->helper("pagination");
+		
 		$this->application = $this->app("videos");
 		
 		$this->Templates->theme();
+
+		$this->helper("debugging");
 	}
 	
 	public function index() {
@@ -34,14 +34,14 @@ class Videos_Controller extends ZP_Controller {
 		$this->Videos_Model = $this->model("Videos_Model");
 		
 		$limit = $this->limit();
-		
+	
 		$videos = $this->Videos_Model->getVideos($limit);	
-		
+				
 		if($videos) {			
 			$vars["pagination"] = $this->pagination;
 			$vars["videos"] 	= $videos;			
 			$vars["view"] 		= $this->view("videos", TRUE);
-		
+			
 			$this->render("content", $vars);
 		} else {
 			redirect();
@@ -62,7 +62,7 @@ class Videos_Controller extends ZP_Controller {
 	}
 	
 	private function limit() { 			
-		$start = (segment(0, isLang()) === "videos" and segment(1, isLang()) > 0) ? (segment(2) * _maxLimitVideos) - _maxLimitVideos : 0;
+		$start = (segment(0, isLang()) === "videos" and segment(1, isLang()) > 0) ? (segment(1, isLang()) * _maxLimitVideos) - _maxLimitVideos : 0;
 		
 		$limit = $start .", ". _maxLimitVideos;			
 		$count = $this->Videos_Model->count();

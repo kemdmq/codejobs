@@ -1,3 +1,9 @@
+.video {
+	float: left;
+	width: 370px;
+	text-align: center;
+}
+
 .videos a {
 	color: #292929;
 	text-decoration: none;

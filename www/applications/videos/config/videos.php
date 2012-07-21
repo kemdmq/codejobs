@@ -7,4 +7,4 @@ if(!defined("_access")) {
 }
 
 define("_userYouTube", "codejobs");
-define("_maxLimitVideos", 3);
+define("_maxLimitVideos", 15);

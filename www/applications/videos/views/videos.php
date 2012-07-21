@@ -2,23 +2,28 @@
 		
 <div class="videos">
 	<?php
+		$i = 1;
 		foreach($videos as $video) {
 		?>
-		<?php $URL = path("videos/video/". $video["ID_Video"]);?>
-			<p class="video-title">
-				<h2>
+		<?php $URL = path("videos/video/". $video["ID_Video"]); ?>
+			<div class="video">
+				<h3>
 					<a href="<?php echo $URL; ?>" title="<?php echo $video["Title"]; ?>">
 						<?php echo $video["Title"]; ?>
 					</a>
-				</h2>
+				</h3>
 
-				<iframe width="800" height="460" src="http://www.youtube.com/embed/<?php echo $video["ID_YouTube"]; ?>" frameborder="0" allowfullscreen></iframe>
-			</p>
+				<iframe width="300" height="200" src="http://www.youtube.com/embed/<?php echo $video["ID_YouTube"]; ?>" frameborder="0" allowfullscreen></iframe>
+			</div>
 		<?php
+			if($i === 2) {
+				echo '<div class="clear"></div><br /><br />';
+				$i = 1;
+			} else {
+				$i++;
+			}
 		}
 	?>
-	
-	<br /><br />
 
 	<?php echo $pagination; ?>	
 </div>

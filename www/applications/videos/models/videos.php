@@ -197,9 +197,7 @@ class Videos_Model extends ZP_Model {
 	}
 	
 	public function getVideos($limit = 10) {		
-		$data = $this->Db->findAll($this->table, $this->fields, NULL, "ID_Video DESC", $limit);
-		
-		return $data;
+		return $this->Db->findAll($this->table, $this->fields, NULL, "ID_Video DESC", $limit);
 	}
 	
 	public function count($limit = 10) {
