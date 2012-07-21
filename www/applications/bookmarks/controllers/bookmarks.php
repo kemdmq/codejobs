@@ -33,6 +33,21 @@ class Bookmarks_Controller extends ZP_Controller {
 		}
 	}
 
+	public function rss() {
+		$this->helper("time");
+
+		$data = $this->Bookmarks_Model->getRSS();
+		
+		if($data) {
+			$vars["bookmarks"]= $data;	
+
+			$this->view("rss", $vars, $this->application);
+		} else {
+			redirect();
+		}
+
+	}
+
 	public function add() {
 		isConnected();
 

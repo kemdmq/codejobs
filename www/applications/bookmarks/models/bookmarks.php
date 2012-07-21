@@ -13,11 +13,15 @@ class Bookmarks_Model extends ZP_Model {
 		
 		$this->table  = "bookmarks";
 		$this->fields = "ID_Bookmark, Title, Slug, URL, Description, Tags, Author, Views, Likes, Dislikes, Reported, Language, Start_Date, Situation";
-
+		$this->language = whichLanguage();
 		$this->Data = $this->core("Data");
 		$this->Data->table("bookmarks");
 
 		$this->helper("alerts");
+	}
+
+	public function getRSS() {	
+		return $this->Db->findBySQL("Language = '$this->language' AND Situation = 'Active'", $this->table, $this->fields, NULL, "ID_Bookmark DESC");
 	}
 	
 	public function cpanel($action, $limit = NULL, $order = "ID_Link DESC", $search = NULL, $field = NULL, $trash = FALSE) {		
