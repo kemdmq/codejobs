@@ -5,7 +5,7 @@ echo "<?xml version='1.0' encoding='utf-8'?>";
 ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> 
   <channel> 
-    <title><![CDATA[Codejobs - Lo más nuevo ]]></title> 
+    <title><![CDATA[Codejobs - <?php echo __(_("Blog")); ?>  ]]></title> 
     <link><![CDATA[http://www.codejobs.com/]]></link> 
     <description><![CDATA[RSS Codejobs]]></description>
     <language>es-es</language> 
@@ -16,7 +16,7 @@ echo "<?xml version='1.0' encoding='utf-8'?>";
 	<image>
 		<url></url>
 
-		<title>Codejobs - Lo más nuevo</title>
+		<title>Codejobs - <?php echo __(_("blog")); ?></title>
 		<link><?php echo path(); ?></link>
 	</image>
 	<?php 
