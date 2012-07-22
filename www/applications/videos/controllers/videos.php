@@ -18,8 +18,6 @@ class Videos_Controller extends ZP_Controller {
 		$this->application = $this->app("videos");
 		
 		$this->Templates->theme();
-
-		$this->helper("debugging");
 	}
 	
 	public function index() {
