@@ -10,7 +10,7 @@
         <text>Idioma%2C%20Registrar%2C%20Conectar</text>
       </controlProperties>
     </control>
-    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="64" y="47" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="64" y="47" w="-1" h="-1" measuredW="250" measuredH="90" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/logo.png</src>
         <text/>
@@ -26,22 +26,22 @@
         <text>Android</text>
       </controlProperties>
     </control>
-    <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="591" y="66" w="-1" h="-1" measuredW="91" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="591" y="66" w="-1" h="-1" measuredW="92" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Backbone.js</text>
       </controlProperties>
     </control>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="685" y="66" w="-1" h="-1" measuredW="92" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="685" y="66" w="-1" h="-1" measuredW="91" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>CodeIgniter</text>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="781" y="67" w="-1" h="-1" measuredW="57" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="781" y="67" w="-1" h="-1" measuredW="58" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>CSS3</text>
       </controlProperties>
     </control>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="841" y="66" w="-1" h="-1" measuredW="78" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="841" y="66" w="-1" h="-1" measuredW="80" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Database</text>
       </controlProperties>
@@ -51,17 +51,17 @@
         <text>eMarketing</text>
       </controlProperties>
     </control>
-    <control controlID="13" controlTypeID="com.balsamiq.mockups::Button" x="1015" y="66" w="-1" h="-1" measuredW="93" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Button" x="1015" y="66" w="-1" h="-1" measuredW="92" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Git%20%26%20Github</text>
       </controlProperties>
     </control>
-    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="1111" y="66" w="-1" h="-1" measuredW="65" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="1111" y="66" w="-1" h="-1" measuredW="66" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>HTML5</text>
       </controlProperties>
     </control>
-    <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="1180" y="66" w="-1" h="-1" measuredW="44" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="1180" y="66" w="-1" h="-1" measuredW="45" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>iOS</text>
       </controlProperties>
@@ -76,17 +76,17 @@
         <text>Javascript</text>
       </controlProperties>
     </control>
-    <control controlID="18" controlTypeID="com.balsamiq.mockups::Button" x="574" y="99" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Button" x="574" y="99" w="-1" h="-1" measuredW="62" measuredH="27" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <text>jQuery</text>
       </controlProperties>
     </control>
-    <control controlID="19" controlTypeID="com.balsamiq.mockups::Button" x="638" y="99" w="-1" h="-1" measuredW="76" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Button" x="638" y="99" w="-1" h="-1" measuredW="78" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <text>MongoDB</text>
       </controlProperties>
     </control>
-    <control controlID="20" controlTypeID="com.balsamiq.mockups::Button" x="716" y="99" w="-1" h="-1" measuredW="66" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Button" x="716" y="99" w="-1" h="-1" measuredW="67" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
       <controlProperties>
         <text>MySQL</text>
       </controlProperties>
@@ -96,7 +96,7 @@
         <text>Node.js</text>
       </controlProperties>
     </control>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::Button" x="852" y="99" w="-1" h="-1" measuredW="49" measuredH="27" zOrder="19" locked="false" isInGroup="-1">
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Button" x="852" y="99" w="-1" h="-1" measuredW="48" measuredH="27" zOrder="19" locked="false" isInGroup="-1">
       <controlProperties>
         <text>PHP</text>
       </controlProperties>
@@ -111,12 +111,12 @@
         <text>Ruby</text>
       </controlProperties>
     </control>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::Button" x="1034" y="102" w="-1" h="-1" measuredW="48" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Button" x="1034" y="102" w="-1" h="-1" measuredW="49" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
       <controlProperties>
         <text>RoR</text>
       </controlProperties>
     </control>
-    <control controlID="26" controlTypeID="com.balsamiq.mockups::Button" x="1084" y="101" w="-1" h="-1" measuredW="94" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Button" x="1084" y="101" w="-1" h="-1" measuredW="95" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Social%20Media</text>
       </controlProperties>
@@ -126,25 +126,25 @@
         <text>ZanPHP</text>
       </controlProperties>
     </control>
-    <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="1059" y="165" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="25" locked="false" isInGroup="-1">
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="1059" y="165" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/twitter.png</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="1097" y="165" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="26" locked="false" isInGroup="-1">
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="1097" y="165" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="26" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/facebook.png</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="1136" y="165" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="27" locked="false" isInGroup="-1">
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="1136" y="165" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="27" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/youtube.png</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="31" controlTypeID="com.balsamiq.mockups::Image" x="1176" y="165" w="32" h="32" measuredW="77" measuredH="79" zOrder="28" locked="false" isInGroup="-1">
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Image" x="1176" y="165" w="32" h="32" measuredW="32" measuredH="32" zOrder="28" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../www/lib/themes/newcodejobs/images/social/rss.png</src>
         <text/>
@@ -172,9 +172,9 @@
         <text>Todos%20los%20s%E1bados%20en%20Codejobs%20TV%21</text>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::Image" x="1020" y="293" w="247" h="161" measuredW="247" measuredH="161" zOrder="32" locked="false" isInGroup="-1">
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Image" x="1020" y="293" w="247" h="161" measuredW="77" measuredH="79" zOrder="32" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../../../../../Users/czantany/Desktop/Horario.png</src>
+        <src>../../../../file%3A/Users/czantany/Desktop/Horario.png</src>
         <text/>
       </controlProperties>
     </control>
@@ -196,19 +196,19 @@
         <text>0%20Comentarios</text>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::Paragraph" x="64" y="462" w="916" h="222" measuredW="200" measuredH="140" zOrder="36" locked="false" isInGroup="-1">
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Paragraph" x="64" y="462" w="916" h="222" measuredW="200" measuredH="80" zOrder="36" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Lipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%20%0A%20%0ALipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Curabitur%20et%20risus%20metus.%20Quisque%20sed%20ante%20justo.%20Pellentesque%20habitant%20morbi%20tristique%20senectus%20et%20netus%20et%20malesuada%20fames%20ac%20turpis%20egestas.%20Nunc%20eu%20eros%20sit%20amet%20urna%20pharetra%20ullamcorper.%20Proin%20bibendum%20porta%20tortor%2C%20eget%20feugiat%20diam%20dignissim%20in.%20Morbi%20sed%20consequat%20erat.%20Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Vestibulum%20molestie%20dignissim%20magna%20condimentum%20condimentum.%20Vestibulum%20ante%20ipsum%20primis%20in%20faucibus%20orci%20luctus%20et%20ultrices%20posuere%20cubilia%20Curae%3B</text>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::Image" x="64" y="233" w="376" h="221" measuredW="600" measuredH="400" zOrder="37" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Image" x="64" y="233" w="376" h="221" measuredW="77" measuredH="79" zOrder="37" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../../../../../Users/czantany/Pictures/logo_html5.jpg</src>
+        <src>../../../../file%3A/Users/czantany/Pictures/logo_html5.jpg</src>
         <text/>
       </controlProperties>
     </control>
     <control controlID="48" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="724" w="1282" h="70" measuredW="100" measuredH="70" zOrder="38" locked="false" isInGroup="-1"/>
-    <control controlID="49" controlTypeID="com.balsamiq.mockups::LinkBar" x="339" y="739" w="-1" h="-1" measuredW="531" measuredH="21" zOrder="39" locked="false" isInGroup="-1">
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::LinkBar" x="339" y="739" w="-1" h="-1" measuredW="523" measuredH="21" zOrder="39" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Publicidad%2C%20Aviso%20Legal%2C%20Condiciones%20de%20uso%2C%20Acerca%20de%20CodeJobs%2C%20Cont%E1ctenos</text>
       </controlProperties>
@@ -216,6 +216,18 @@
     <control controlID="50" controlTypeID="com.balsamiq.mockups::Label" x="330" y="768" w="-1" h="-1" measuredW="591" measuredH="21" zOrder="40" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Este%20sitio%20est%E1%20bajo%20una%20licencia%20Creative%20Commonds%20Attributtion%203.0%20Licence.%20Desarrollado%20por%20MilkZoft</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::TextInput" x="722" y="4" w="223" h="-1" measuredW="137" measuredH="27" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <state>up</state>
+        <text>Buscar%20en%20Codejobs...</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Icon" x="923" y="10" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
   </controls>
